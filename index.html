@@ -5,16 +5,148 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="./css/index.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-      
+      <div class="container">
+        <h3 id="title">dkm may</h3>
+
+        <input type="text" id="txt" class="form-control w-25 mb-5" value="123">
+        <input type="number" id="number" class="form-control w-25 mb-5 " value="1000000">
+
+        <img src="./img/pic4.jpg" alt="hinhanh" id="hinhanh">
+
+
+        <button  onclick="sayhello()"  class="btn btn-success" > động vào em đi :D</button>
+
+      <div class="from__group">
+        <p>nhập 1 giá trị</p>
+        <input type="text" name="" id="giatrinhap" class="form-control">
+        <button onclick="hienthithongtin ()"  id="btnhienthi" class="btn btn-success">hiển thị</button>
+        <div class="mt-2 text-success">
+          kết quả : <span id="hienthiketqua"></span>
+        </div>
+
+
+      </div>
+
+      <div class="tinhluong">
+        <h2> Ví dụ 2 tính lương nhân viên</h2>
+
+        <p>tiền lương 1 giờ</p>
+        <input type="number" id="tienluong1h">
+
+        <p> số giờ làm</p>
+        <input type="number" id="sogiolam" >
+        <br>
+
+        <button  onclick="hienthitienluong ()" id="hienthi" class="btn btn-success mt-2">
+          Tính tiền
+        </button>
+
+        <div class="mt-2  bg-success">
+          kết quả : <span id="tongluong"></span>
+        </div>
+
+
+
+
+      </div>
+
+      <div class="dangnhap text-center">
+          <h3 > Đăng Nhập</h3>
+        <div class="taikhoan mb-3">
+          <span>Tài Khoản :</span>
+          <input type="text" id="taikhoan">
+        </div>
+        <div class="matkhau mb-3">
+          <span>Mật Khẩu :</span>
+          <input type="password" name="" id="matkhau">
+        </div>
+        <button class="btn btn-success" id="btndangnhap"> Đăng Nhập</button>
+        
+        <p id="ketquadangnhap"> kết quả đăng nhập:</p>
+
+
+
+
+
+
+
+
+      </div>
+
+      <div class="tinhtientip text-center w-25 p-2">
+        <h3>TÍNH TIỀN TÍP</h3>
+
+        <div class="tienthanhtoan m-2">
+          <p  class="text-left">Tổng tiền thanh toán</p>
+          <span>$</span>
+          <input type="text" id="tienthanhtoan">
+
+        </div>
+        <div class="tientip m-2">
+          <p  class="text-left"> Bạn muốn típ bao nhiêu</p>
+          <select name="" id="phantramtip">
+            <option value="0 ">chọn % muốn típ</option>
+            <option value="30">30% - tuyệt</option>
+            <option value="20">20% - tôt</option>
+            <option value="15">15% - tạm ổn</option>
+            <option value="10">10% - tồi</option>
+            <option value="5">5% - tồi tệ</option>
+          </select>
+        </div>
+        <div class="chiatien m-2">
+          <p class="text-left">Số người típ</p>
+          <input type="text" id="songuoitip">
+
+        </div>
+        <button class="btn btn-danger" id="btntinhtientip"> tính nào</button>
+        <BR></BR>
+        <span >số tiền tip trên người</span>
+        <br>
+        <span id="tientiptrennguoi">10$</span>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+      </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <!-- <script src="./js/hi.js"></script> -->
+    
   </body>
 </html>
